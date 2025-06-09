@@ -1,0 +1,13 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+shared.path = "../shared"
+clap.workspace = true
+tokio.workspace = true
+env_logger.workspace = true
+log.workspace = true
+easytcp.workspace = true
+gilrs.workspace = true

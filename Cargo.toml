@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = ["shared", "server", "client"]
+
+[workspace.dependencies]
+easytcp = "0.1.0"
+gilrs = { version = "0.11.0", features = ["serde-serialize"] }
+serde = { version = "1.0.219", features = ["derive"] }
+clap = { version = "4.5.39", features = ["derive"] }
+env_logger = "0.11.8"
+anyhow = "1.0.98"
+log = "0.4.27"
+
+[workspace.dependencies.tokio]
+version = "1.45.1"
+features = ["rt-multi-thread", "macros", "net", "io-util", "sync", "time"]
